@@ -7,3 +7,5 @@ logs
 
 # Optional eslint cache
 .eslintcache
+
+userStory.md
