@@ -1,4 +1,3 @@
-# travel-destination
 
 ## Team :
 1. Fizzo Pannosch 
@@ -44,3 +43,4 @@ That's a three page app that takes the user through a quiz to determine potentia
 ## Domain Modeling 
 
 ![Domain Modeling](img/Domain.png)
+
