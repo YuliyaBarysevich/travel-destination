@@ -1,0 +1,15 @@
+section {
+  display: flex;
+}
+
+
+
+img {
+  width: 300px;
+}
+
+
+button {
+  padding: 24px 54px;
+  /* visibility: hidden; */
+}
