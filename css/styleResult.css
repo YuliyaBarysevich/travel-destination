@@ -1,0 +1,165 @@
+header {
+  background-color:#94A6A2;
+  
+}
+
+h2 {
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  padding-top: 25px;
+  margin-bottom: 20px;
+}
+
+nav {
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+  justify-content: center;
+}
+
+
+nav li {
+  display:inline-block;
+  margin: 15px; 
+  letter-spacing: 2px;
+  border-bottom: 2px solid #496773;
+  border-top: 2px solid #496773;
+  padding: 7px 7px;
+}
+
+nav a {
+  color: rgb(241, 241, 241);
+  font-weight: 700;
+  transition-property: color;
+  transition-duration: 300ms;
+
+}
+a {
+  text-decoration: none;
+}
+
+nav a:hover {
+color:rgba(26, 25, 25, 0.8)
+}
+
+body {
+  background-color: #C1D9D4;
+
+}
+
+h2 {
+  text-align: center;
+  color: rgba(26, 25, 25, 0.8);
+}
+#logo {
+  width: 550px;
+  height: 270px;
+  display: block;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+h3 {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+
+div img {
+  width: 700px;
+  display: block;
+  margin: 0 auto;
+  border: 2px solid rgba(43, 43, 43, 0.801);
+}
+
+p {
+  width : 650px;
+  text-align: center;
+  margin: 50px auto;
+  line-height: 1.4em;
+  font-size: 19px;
+}
+
+#helpfulLinksHere{
+  margin: 0 auto;
+  width: 650px;
+}
+
+#helpfulLinksHere li{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  width: 700px;
+  text-align: center;
+  margin: 10px auto;
+}
+
+fieldset{
+  text-align: center;
+  width: 300px;
+  margin: 50px auto;
+  font-size: 23px;
+  font-weight: bold;
+  color:#496773;
+}
+
+legend{
+  margin-bottom: 20px;
+  color: #324a53;
+  border-bottom: #496773 3px solid;
+  border-top: #496773 3px solid;
+  padding: 15px;
+ 
+}
+input {
+  display: block;
+  padding: 5px 5px 5px 30px;
+  width: 250px;
+  height: 30px;
+  background-color: #f3f0f0;
+  border-radius: 12px;
+  border: 3px solid  #496773;
+  margin-bottom: 20px;
+  margin-top: 15px;
+  font-size: 13px;
+  color: #324a53;
+}
+
+ input:hover{
+  background-color:#c1ccc9;
+}
+
+#submit {
+  display: block;
+  width: 150px;
+  height: 50px;
+  margin: 20px auto;
+  padding: 5px 5px 5px 5px;
+  background-color: #496773;
+  color: white;
+  font-size: 17px;
+  border: 1px #3b545e solid;
+  transition-property: background-color, color, border;
+  transition-duration: 300ms;
+  transition-timing-function: linear;
+  box-shadow: -5px -2px 15px #919090;
+}
+
+#submit:hover {
+  background-color: #8e9da3;
+  color: whitesmoke;
+  border: 2px solid #3b545e;
+}
+
+footer{
+  background-color: #94A6A2;
+  margin-bottom: -55px;
+
+}
+
+footer p {
+  text-align: center;
+  padding: 50px 0;
+}

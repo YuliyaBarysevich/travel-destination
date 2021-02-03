@@ -9,6 +9,7 @@ h2 {
   letter-spacing: 0.1em;
   padding-top: 25px;
   margin-bottom: 20px;
+  color: rgba(26, 25, 25, 0.8);
 }
 
 nav {
@@ -19,16 +20,29 @@ nav {
 }
 
 
-li {
+nav li {
   display:inline-block;
   padding: 15px; 
+  margin: 15px; 
+  letter-spacing: 2px;
+  border-bottom: 2px solid #496773;
+  border-top: 2px solid #496773;
+  padding: 7px 7px;
 }
 
-a {
-  text-decoration: none;
+nav a {
   color: white;
   font-weight: 700;
+  transition-property: color;
+  transition-duration: 300ms;
 }
+a {
+  text-decoration: none;
+}
+
+nav a:hover {
+  color:rgba(26, 25, 25, 0.8)
+  }
 
 body {
   background-color: #C1D9D4;
@@ -114,6 +128,24 @@ button:hover{
 
 button:active{
   width: 195px;
+}
+
+#aside-pic {
+  width: 40px;
+  display: block;
+  margin: 0 auto;
+  border-top: 2px solid black;
+  padding: 10px 130px;
+}
+
+aside { 
+  margin: 20px auto;
+  width: 300px;
+  text-align: center;
+  line-height: 1.3em;
+  border-bottom: 2px solid black;
+  padding-bottom: 10px;
+ 
 }
 
 footer{
