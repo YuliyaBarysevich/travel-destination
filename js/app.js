@@ -1,6 +1,6 @@
 'use strict';
 // make sure the array is in order of: 6 questions, with Mtn, City, Beach
-var imagesArray = ['mountains2', 'old-town', 'beach', 'barbeque', 'pasta2', 'seafood', 'activity', 'EduvationalVacation', 'relaxFriends', 'beer', 'wine', 'coctail', 'campfire', 'club', 'sunset', 'cabin', 'plaza_hotel', 'resort'];
+var imagesArray = ['mountains2', 'old-town', 'beach', 'barbeque', 'pasta2', 'seafood', 'activity', 'EducationalVacation', 'relaxFriends', 'beer', 'wine', 'coctail', 'campfire', 'club', 'sunset', 'cabin', 'plaza_hotel', 'resort'];
 
 VacationQuestion.allQuestions = [];
 
@@ -32,7 +32,7 @@ function fetchObject(key) {
 function createVacationQuestions() {
   new VacationQuestion('If you had the whole day to yourself, you would roam...', 0, 0, 0, 'mountains2', 'old-town', 'beach')
   new VacationQuestion('Which food are you most likely to try ?', 0, 0, 0, 'barbeque', 'pasta2', 'seafood')
-  new VacationQuestion('What makes a trip feel truely special for you ?', 0, 0, 0, 'activity', 'EduvationalVacation', 'relaxFriends')
+  new VacationQuestion('What makes a trip feel truely special for you ?', 0, 0, 0, 'activity', 'EducationalVacation', 'relaxFriends')
   new VacationQuestion('When it\`s time for a drink, you reach for ...', 0, 0, 0, 'beer', 'wine', 'coctail')
   new VacationQuestion('When the sun goes down, what would you like to do ?', 0, 0, 0, 'campfire', 'club', 'sunset')
   new VacationQuestion('And where would you like to stay ?', 0, 0, 0, 'cabin', 'plaza_hotel', 'resort')
@@ -49,6 +49,8 @@ var rightImageElement = document.getElementById('rightImage');
 // var buttonElement = document.getElementById('buttonHere');
 var thisIsTheRealButtonElement = document.getElementById('thisIsTheRealButton');
 thisIsTheRealButtonElement.style.visibility = 'hidden';
+// added h4 tag - important if you do tag name you have to add index number!!!
+var h4Element = document.getElementsByTagName('h4')[0];
 
 
 function displayVacationQuestions(indexNumber) {
@@ -63,7 +65,7 @@ var rounds = 0;
 
 function handleImageClick(event) {
   event.preventDefault();
-  if (rounds < VacationQuestion.allQuestions.length - 1) {
+  if (rounds < VacationQuestion.allQuestions.length) {
 
     if (event.target.src.includes(VacationQuestion.allQuestions[rounds].imagePath1)) {
       VacationQuestion.allQuestions[rounds].timesClickedMtn++;
@@ -73,23 +75,46 @@ function handleImageClick(event) {
       VacationQuestion.allQuestions[rounds].timesClickedBeach++;
     }
     rounds++;
-    displayVacationQuestions(rounds);
+    // added if statement to handle display and counter
+    if (rounds < VacationQuestion.allQuestions.length) {
+      displayVacationQuestions(rounds);
+      console.log('hello there this is number ', rounds + 1)
+    } else {
+      // wrapped all these statements in a function to be able to use it at either place
+      displayButtonNext();
+    }
+
   } else {
+    // this is the other place - wrapped in a function 
+    displayButtonNext();
     // remove event listener, set button display 
-    imageContainer.removeEventListener('click', handleImageClick);
-    imageContainerElement.style.display = 'none';
-    thisIsTheRealButtonElement.style.visibility = 'visible';
+    // imageContainer.removeEventListener('click', handleImageClick);
+    // imageContainerElement.style.display = 'none';
+    // thisIsTheRealButtonElement.style.visibility = 'visible';
     // local storage
-    storeObject(VacationQuestion.allQuestions);
+    // storeObject(VacationQuestion.allQuestions);
   }
 
 }
 
-buttonElement.addEventListener('click', submitButtonOnOff);
-function submitButtonOnOff(event) {
-  event.preventDefault();
+function displayButtonNext() {
+  // remove event listener, set button display 
+  imageContainer.removeEventListener('click', handleImageClick);
+  imageContainerElement.style.display = 'none';
+  thisIsTheRealButtonElement.style.visibility = 'visible';
+  // local storage
+  storeObject(VacationQuestion.allQuestions);
+  // change text in h3
+  quizQuestionsElement.textContent = 'Please click the button below to see your results';
+  h4Element.style.display = 'none';
+  console.log(h4Element.textContent)
+}
+
+// buttonElement.addEventListener('click', submitButtonOnOff);
+// function submitButtonOnOff(event) {
+//   event.preventDefault();
   // thisIsTheRealButtonElement.setAttribute('href', 'results.html');
   // buttonElement.setAttribute('href', 'results.html');
-}
+// }
 
 

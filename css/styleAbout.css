@@ -116,6 +116,40 @@ button:active{
   width: 195px;
 }
 
+main {
+  width: 960px;
+  display: block;
+  margin: 0 auto;
+}
+
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section .aboutImageContainer {
+  width:48%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  margin: 16px;
+}
+
+section .aboutImageContainer img {
+  width: 100px;
+  height: 115px;
+  margin-bottom: 12px;
+
+}
+
+section .aboutImageContainer p {
+  line-height: 125%;
+}
+
 footer{
   background-color: #94A6A2;
 }
@@ -125,11 +159,3 @@ footer p {
   padding: 40px 0;
 }
 
-/* #leftImageContainer {
-  /* float: left; */
-  /* display: center; */
-/* } */
-
-/* #rightImageContainer {
-  margin: auto;
-} */ 
