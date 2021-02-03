@@ -35,8 +35,9 @@ function getResults() {
   } else if (totalBeachClick > totalMtnClick && totalBeachClick > totalCityClick) {
     h3Element.textContent = "Congratulations, Beach BOY";
     resultsImageElement.src = "img/hawaii.jpg"
-  } else {
-    h3Element.textContent = "Darn it something went wrong";
+  } else if (totalBeachClick == totalMtnClick || totalBeachClick == totalCityClick || totalMtnClick == totalCityClick) {
+    h3Element.textContent = "Congratulations, you get to go to California !";
+    resultsImageElement.src = "img/california.jpg"
   }
   displayResults();
 }
