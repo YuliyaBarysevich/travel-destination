@@ -1,1 +1,39 @@
 /* trying to add pics */
+header {
+  background-color: #8C464C;
+
+}
+
+body {
+  background-color: #d9bfb0;
+
+}
+
+h2 {
+  text-align: center;
+}
+
+img {
+  width: 450px;
+  height: 600px;
+  display: inline;
+}
+
+ul {
+  text-align: center;
+  display: inline;
+
+}
+
+#imageContainer {
+  background-color: #59403E;
+}
+
+#leftImageContainer {
+  float: left;
+  display: center;
+}
+
+#rightImageContainer {
+  margin: auto;
+}
