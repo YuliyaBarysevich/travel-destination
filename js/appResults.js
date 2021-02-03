@@ -28,13 +28,13 @@ function getResults() {
   }
   if (totalMtnClick > totalCityClick && totalMtnClick > totalBeachClick) {
     h3Element.textContent = "Congratulations, Mountain MAN";
-    resultsImageElement.src = "img/mountains2.jpg"
+    resultsImageElement.src = "img/zion.jpeg"
   } else if (totalCityClick > totalMtnClick && totalCityClick > totalBeachClick) {
     h3Element.textContent = "Congratulations, City slicker";
-    resultsImageElement.src = "img/club.jpg"
+    resultsImageElement.src = "img/boston.png"
   } else if (totalBeachClick > totalMtnClick && totalBeachClick > totalCityClick) {
     h3Element.textContent = "Congratulations, Beach BOY";
-    resultsImageElement.src = "img/beach.jpg"
+    resultsImageElement.src = "img/hawaii.jpg"
   } else {
     h3Element.textContent = "Darn it something went wrong";
   }
