@@ -21,7 +21,7 @@ function VacationQuestion(question, timesClickedMtn, timesClickedCity, timesClic
 
 function storeObject(obj) {
   var stringifiedArray = JSON.stringify(obj);
-  localStorage.setItem('products', stringifiedArray);
+  localStorage.setItem('vacationObjects', stringifiedArray);
 }
 
 function fetchObject(key) {
@@ -46,9 +46,10 @@ var imageContainerElement = document.getElementById('imageContainer');
 var leftImageElement = document.getElementById('leftImage');
 var middleImageElement = document.getElementById('middleImage');
 var rightImageElement = document.getElementById('rightImage');
-var buttonElement = document.getElementById('buttonHere');
+// var buttonElement = document.getElementById('buttonHere');
 var thisIsTheRealButtonElement = document.getElementById('thisIsTheRealButton');
 thisIsTheRealButtonElement.style.visibility = 'hidden';
+
 
 function displayVacationQuestions(indexNumber) {
   quizQuestionsElement.textContent = VacationQuestion.allQuestions[indexNumber].question;
@@ -78,16 +79,17 @@ function handleImageClick(event) {
     imageContainer.removeEventListener('click', handleImageClick);
     imageContainerElement.style.display = 'none';
     thisIsTheRealButtonElement.style.visibility = 'visible';
-
+    // local storage
+    storeObject(VacationQuestion.allQuestions);
   }
 
 }
 
-buttonElement.addEventListener('submit', function (event) {
+buttonElement.addEventListener('click', submitButtonOnOff);
+function submitButtonOnOff(event) {
   event.preventDefault();
-  imageContainer.style.display = 'block';
-  var aElement = document.createElement('a');
-  aElement.setAttribute("href", "results.html");
-  buttonElement.appendChild(aElement);
+  // thisIsTheRealButtonElement.setAttribute('href', 'results.html');
+  // buttonElement.setAttribute('href', 'results.html');
+}
 
-})
+
