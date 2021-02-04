@@ -1,4 +1,12 @@
 /* trying to add pics */
+@font-face {
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/comfortaa/v30/1Pt_g8LJRfWJmhDAuUsSQamb1W0lwk4S4WjMDrMfJh1Zyc61YA.woff) format('woff');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
 header {
   background-color:#94A6A2;
   
@@ -7,9 +15,10 @@ header {
 h2 {
   font-size: 20px;
   letter-spacing: 0.1em;
-  padding-top: 25px;
+  padding-top: 40px;
   margin-bottom: 20px;
   color: rgba(26, 25, 25, 0.8);
+  font-family: fantasy;
 }
 
 nav {
@@ -90,6 +99,9 @@ h3 {
   text-align: center;
   font-size: 30px;
   margin-top: 40px;
+  font-family: 'Comfortaa';
+  color: rgba(26, 25, 25, 0.8);
+  text-shadow: 1px 1px grey;
 }
 
 h4 {
@@ -135,12 +147,12 @@ button:active{
   display: block;
   margin: 0 auto;
   border-top: 2px solid black;
-  padding: 10px 130px;
+  padding: 10px 155px;
 }
 
 aside { 
-  margin: 20px auto;
-  width: 300px;
+  margin: 10px auto 20px auto;
+  width: 350px;
   text-align: center;
   line-height: 1.3em;
   border-bottom: 2px solid black;
@@ -154,7 +166,7 @@ footer{
 
 footer p {
   text-align: center;
-  padding: 40px 0;
+  padding: 80px 0 15px 0;
 }
 
 /* #leftImageContainer {

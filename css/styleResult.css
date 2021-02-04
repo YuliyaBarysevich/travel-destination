@@ -1,3 +1,12 @@
+@font-face {
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/comfortaa/v30/1Pt_g8LJRfWJmhDAuUsSQamb1W0lwk4S4WjMDrMfJh1Zyc61YA.woff) format('woff');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
 header {
   background-color:#94A6A2;
   
@@ -6,8 +15,11 @@ header {
 h2 {
   font-size: 20px;
   letter-spacing: 0.1em;
-  padding-top: 25px;
+  padding-top: 40px;
   margin-bottom: 20px;
+  text-align: center;
+  color: rgba(26, 25, 25, 0.8);
+  font-family: fantasy;
 }
 
 nav {
@@ -47,10 +59,6 @@ body {
 
 }
 
-h2 {
-  text-align: center;
-  color: rgba(26, 25, 25, 0.8);
-}
 #logo {
   width: 550px;
   height: 270px;
@@ -63,6 +71,9 @@ h3 {
   font-size: 30px;
   margin-top: 40px;
   margin-bottom: 50px;
+  font-family: 'Comfortaa';
+  color: rgba(26, 25, 25, 0.8);
+  text-shadow: 1px 1px grey;
 }
 
 div img {
@@ -156,27 +167,36 @@ input {
 #helpfulLinksHere {
   width: 400px;
   /* height: 300px; */
-  background-color: #c1ccc9;
+  background-color: #e4e4e2;
   border: 3px solid #3b545e;
   border-radius: 12px;
-  padding: 24px;
+  padding-top: 27px;
+  padding-bottom: 15px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+#helpfulLinksHere:hover {
+  background-color: whitesmoke;
 }
 
 
 #helpfulLinksHere a {
   font-size: 24px;
   text-decoration: none;
-  /* color: #3b545e; */
-  color:black;
+  color:#31464e;
+  font-family: 'Comfortaa';
 }
+#helpfulLinksHere a:hover {
+  color:red;
+}
+
 
 footer{
   background-color: #94A6A2;
   margin-bottom: -55px;
-
 }
 
 footer p {
   text-align: center;
-  padding: 50px 0;
+  padding: 80px 0 15px 0;
 }

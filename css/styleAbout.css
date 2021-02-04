@@ -7,9 +7,10 @@ header {
 h2 {
   font-size: 20px;
   letter-spacing: 0.1em;
-  padding-top: 25px;
+  padding-top: 40px;
   margin-bottom: 20px;
   color:rgba(26, 25, 25, 0.8);
+  font-family: fantasy;
 }
 nav {
   display: flex;
@@ -82,15 +83,6 @@ div p{
   text-align: center;
 }
 
-/* section .aboutImageContainer {
-  width:48%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: justify;
-  margin: 16px;
-} */
 
 div img {
   width: 150px;
@@ -103,14 +95,17 @@ div img {
 
 section .aboutImageContainer p {
   line-height: 125%;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 18px;
 }
 
 footer{
   background-color: #94A6A2;
+  margin-top: 30px;
 }
 
 footer p {
   text-align: center;
-  padding: 40px 0;
+  padding: 80px 0 15px 0;
 }
 
