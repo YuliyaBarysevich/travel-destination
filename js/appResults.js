@@ -66,6 +66,5 @@ getResults();
 
 
 function displayLinks() {
-
-
 }
+
