@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/styleResult.css">
+  <title>Travel Destination</title>
+</head>
+
+<header>
+  <h2>"Collect moments, not things"  <img src = "img/heart.png"></h2>
+  <nav>
+    <ul>
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="about.html">ABOUT</a></li>
+      <!-- <li><a href="results.html">RESULTS</a></li> -->
+    </ul>
+  </nav>
+</header>
+
+<body>
+  <main>
+    <img id="logo" src="img/logo.png">
+    <h3 id="quizResults" class="textBoxQuestions">
+    </h3>
+    <section id="imageContainerResults">
+      <div id="resultsImageContainer" class="resultsImage">
+        <img alt="" id="resultsImage">
+        <p id="resultsText"></p>
+      </div>
+    </section>
+
+    <div id="helpfulLinksHere">
+      <ul>
+        <li><a id="link1" target="_blank">More Information About...</a></li>
+        <li><a id="link2" target="_blank">Booking Hotels</a></li>
+        <li><a id="link3" target="_blank">Booking Travel</a></li>
+      </ul>
+    </div>
+    <form action="" id="inputForm">
+      <fieldset>
+        <legend>Contact Information</legend>
+
+        <label>
+          First Name
+          <input type="text" name="firstName">
+        </label>
+        <label>
+          Last Name
+          <input type="text" name="lastName">
+        </label>
+        <label for="email">
+          Email
+          <input type="email" name="email">
+        </label>
+        <input id="submit" type="submit" value="Click To Submit">
+      </fieldset>
+    </form>
+  </main>
+  <footer>
+    <div>
+      <p>Email: travel@destination.com</p>
+      <p>Tel: (206) 358-3457</p>
+      <p> 2021 &copy; Team "Travel Destination"</p>
+    </div>
+  </footer>
+  <script src="js/appResults.js"></script>
+</body>
+
+</html>

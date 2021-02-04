@@ -1,0 +1,17 @@
+# Mac OS files
+.DS_Store
+
+# Logs
+logs
+*.log
+
+# Optional eslint cache
+.eslintcache
+
+userStory.md
+
+FizzoUpdates.md
+
+HawaiiText.md
+
+NewApp.js
