@@ -34,7 +34,7 @@ function getResults() {
     h3Element.textContent = "Congratulations, we think a Mountain vacation would be perfect for you...";
     resultsImageElement.src = "img/zion.jpeg";
     pElement.textContent = "Zion\’s landscape is filled with rainbow-colored rock layers chiseled into sharp peaks, high mesas, and deep, twisting canyons. It\’s a place so hauntingly beautiful that you will never forget the silence of Zion\’s sandstone cathedrals, the light reflecting off the slot canyons, the rushing Virgin River, or the architect of its cliffs and canyons. Everyone should visit Zion at least once in their lifetime to hike its trails, wade through canyon waters, and watch deer graze in open meadows. Named by early settler Isaac Behunin in 1863, Zion remains true to its name—the Promised Land and a place of refuge.";
-    link1Element.setAttribute('href', 'https://www.nps.gov/zion/planyourvisit/index.html');
+    link1Element.setAttribute('href', 'https://www.nps.gov/zion/index.htm');
     link2Element.setAttribute('href', 'https://www.hotels.com/de10457653/hotels-near-zion-national-park-south-entrance-springdale-united-states-of-america/');
     link3Element.setAttribute('href', 'https://www.expedia.com/Cheap-Flights-To-Las-Vegas.d178276.Travel-Guide-Flights');
   } else if (totalCityClick > totalMtnClick && totalCityClick > totalBeachClick) {
