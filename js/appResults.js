@@ -57,7 +57,7 @@ function getResults() {
     pElement.textContent = "There are many reasons to visit California because there\’s something for everyone in the Golden State – fun, adventure, beauty, and history await you in this particular West Coast state. Of course, what would California be without its infamous weather? The weather is still great, but now the scenery and weather is just fabulous. Lather on the sunscreen and be prepared to enjoy temperatures of around 70℉ wherever you’re going. Kids and adults alike will never tire of California\’s theme parks. There’s Universal Studios Hollywood, Magic Mountain, Discovery Kingdom, Boomerang Bay and, of course, Disneyland. These are the places to go to make memories that you and your loved ones will truly never forget.";
     link1Element.setAttribute('href', 'https://www.visitcalifornia.com/');
     link2Element.setAttribute('href', 'https://www.tripadvisor.com/Hotels-g28926-California-Hotels.html');
-    link3Element.setAttribute('href', 'http://www.expedia.com');
+    link3Element.setAttribute('href', 'https://www.expedia.com/Destinations-In-California.d206.Flight-Destinations?pwaLob=wizard-flight-pwa');
   }
   displayLinks();
 }

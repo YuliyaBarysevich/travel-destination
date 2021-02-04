@@ -54,7 +54,7 @@ var thisIsTheRealButtonElement = document.getElementById('thisIsTheRealButton');
 thisIsTheRealButtonElement.style.visibility = 'hidden';
 // added h4 tag - important if you do tag name you have to add index number!!!
 var h4Element = document.getElementsByTagName('h4')[0];
-var asideElement = document.getElementById ("insightsHere")
+var asideElement = document.getElementById("insightsHere")
 var asidePicElement = document.getElementById('aside-pic')
 
 
