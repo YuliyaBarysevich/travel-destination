@@ -51,7 +51,7 @@ var middleImageElement = document.getElementById('middleImage');
 var rightImageElement = document.getElementById('rightImage');
 // var buttonElement = document.getElementById('buttonHere');
 var thisIsTheRealButtonElement = document.getElementById('thisIsTheRealButton');
-thisIsTheRealButtonElement.style.visibility = 'hidden';
+thisIsTheRealButtonElement.style.display = 'none';
 // added h4 tag - important if you do tag name you have to add index number!!!
 var h4Element = document.getElementsByTagName('h4')[0];
 var asideElement = document.getElementById("insightsHere")
@@ -107,7 +107,7 @@ function displayButtonNext() {
   // remove event listener, set button display 
   imageContainer.removeEventListener('click', handleImageClick);
   imageContainerElement.style.display = 'none';
-  thisIsTheRealButtonElement.style.visibility = 'visible';
+  thisIsTheRealButtonElement.style.display = 'block';
   // local storage
   storeObject(VacationQuestion.allQuestions);
   // change text in h3
