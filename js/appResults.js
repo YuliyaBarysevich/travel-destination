@@ -59,13 +59,39 @@ function getResults() {
     link2Element.setAttribute('href', 'https://www.tripadvisor.com/Hotels-g28926-California-Hotels.html');
     link3Element.setAttribute('href', 'https://www.expedia.com/Destinations-In-California.d206.Flight-Destinations?pwaLob=wizard-flight-pwa');
   }
-  displayLinks();
+
 }
 
 getResults();
 
 
-function displayLinks() {
 
+UserData.allUserDataArray = [];
+
+var inputFormElement = document.getElementById('inputForm');
+
+function UserData(firstName, lastName, email, totalMtnClick, totalCityClick, totalBeachClick) {
+  this.firstName = firstName;
+  this.lastName = lastName;
+  this.email = email;
+  this.totalMtnClick = totalMtnClick;
+  this.totalCityClick = totalCityClick;
+  this.totalBeachClick = totalBeachClick;
+  UserData.allUserDataArray.push(this);
 
 }
+
+function storeObject(keyname, obj) {
+  var stringifiedArray = JSON.stringify(obj);
+  localStorage.setItem(keyname, stringifiedArray);
+}
+
+inputFormElement.addEventListener('submit', function (event) {
+  event.preventDefault();
+  var firstName = event.target.firstName.value;
+  var lastName = event.target.lastName.value;
+  var email = event.target.email.value;
+  new UserData(firstName, lastName, email, totalMtnClick, totalCityClick, totalBeachClick);
+  storeObject(firstName + lastName, UserData.allUserDataArray);
+  console.log(UserData.allUserDataArray);
+})
